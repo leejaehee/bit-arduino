@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+/*
+태그명 {
+  스타일명: 값;
+  스타일명: 값;
+ ... 
+}
+스타일을 지정할 대상을 선정 => selector
+selector { style name: value;}
+1) 태그 => p {}
+2) 그룹 => .header {}
+3) 아이디 => #id {}
+4) 자식 => 셀렉터 > 자식 셀렉터 {}
+5) 자손 => 셀렉터 자식 셀렉터 {}
+6) 여러 개 => 셀렉터, 셀렡거, .. {}
+
+ */
+h1{
+	color: red;
+}
+/* 여러 개 태그 지정하기 */
+h1, h3{
+	text-decoration: underline;
+}
+/* 태그 그룹 지정하기 */
+.g01 {
+	font-style: italic;
+	border-left: 10px solid blue; 
+}
+.g02{
+	border-top: red 2px dashed;
+}
+.g01, .g02{
+	background-color: yellow;
+}
+#id01{
+	text-decoration: line-through;
+}
+#id02{
+	text-decoration: line-through;
+}
+</style>
+<script type="text/javascript">
+var obj1 = document.getElementById("#id01");
+obj1.childNodes;
+obj1.lastChild;
+
+</script>
+</head>
+<body>
+<div>
+<a href="#">회사로고</a>
+<a href="#">메뉴1</a>
+<a href="#">메뉴2</a>
+<a href="#">메뉴3</a>
+</div>
+<div>
+<h1>제목</h1>
+<h2>내용</h2>
+</div>
+<div>
+<p>이 사이트의 모든 권리는 xx에 있습니다. 사업자 등록 번호 : xxx 대표자명 : xxx 전화번호 : xxxx</p>
+</div>
+<!-- 
+DOM 트리
+=> 웹 브라우저가 HTML 해석하고 트리관계로 내부 컴포넌트를 관리.
+=> 구조화
+=> HTML 컴포넌트의 트리 구조
+=> 화면에 출력되는 컴포넌트의 관계
+Document
+	-> head
+		-> meta
+		-> title
+		-> style
+	-> body
+		-> div
+			-> a
+			-> a
+			-> a
+			-> a
+		-> div
+			-> h1
+			-> p
+		-> div
+			-> address
+ -->
+</body>
+</html>

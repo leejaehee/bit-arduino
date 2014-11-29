@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+/*
+태그명 {
+  스타일명: 값;
+  스타일명: 값;
+ ... 
+}
+스타일을 지정할 대상을 선정 => selector
+selector { style name: value;}
+1) 태그 => p {}
+2) 그룹 => .header {}
+3) 아이디 => #id {}
+4) 자식 => 셀렉터 > 자식 셀렉터 {}
+5) 자손 => 셀렉터 자식 셀렉터 {}
+6) 여러 개 => 셀렉터, 셀렡거, .. {}
+
+ */
+div {
+	border: 2px solid red;
+}
+
+h1 {
+	border: 2px solid blue;
+}
+
+p {
+	border: 2px solid black;
+}
+
+a, span {
+	border: 2px solid green;
+}
+</style>
+</head>
+<body>
+	<h1>CSS 선언</h1>
+	<div>
+		<h1>제목</h1>
+		<p>
+			내용 <b>굵은 글자</b>테스트 <a href='http://www.daum.net'>다음</a>
+		</p>
+		<h1>제목</h1>
+		<p>
+			내용 <span>테스트</span>테스트
+		</p>
+	</div>
+</body>
+</html>

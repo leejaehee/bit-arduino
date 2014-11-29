@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+#header > a {
+	background-color: red;
+	color: white;
+}
+/* 자손 컴포넌트 지정하기 */
+#header a {
+	background-color: blue;
+	color: white;
+}
+ */
+ /* ccs 스타일은 순서대로 나중에 나온것이 앞에 것을 덮어쓴다. 순서가 중요하다. */
+
+a .menu {
+	background-color: red;
+}
+ *//* 제약 조건 지정하기 */
+/* a 태그중에서 menu인 것 */
+/* {
+	background-color: red;
+}
+ */
+ 
+</style>
+</head>
+<body>
+	<div id="header">
+		<a href="#">회사로고</a>
+		<div id="member-bar">
+			<a class="menu" href="#">메뉴1</a>
+			<a class="menu g01" href="#">메뉴2</a>
+			<a class="menu" href="#">메뉴3</a>
+			<button class="menu g01" onclick="alert('메뉴4 클릭');">메뉴4</button>
+			<!-- 태그 html5 책에 한 페이지에 인덱싱된 것 있다. -->
+		</div>
+	</div>
+	<div id="content">
+		<h1>제목</h1>
+		<h2>내용</h2>
+		<a href="#"></a>
+	</div>
+	<div id="footer">
+		<p>이 사이트의 모든 권리는 xx에 있습니다. 사업자 등록 번호 : xxx 대표자명 : xxx 전화번호 : xxxx</p>
+	</div>
+</body>
+</html>
